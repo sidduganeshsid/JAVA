@@ -5,30 +5,9 @@ import java.util.Scanner;
 /*
 * 1.Range of Numbers - done
 * 2.Number of Players - done
-* 3.if tie then winner will play again untill individual player wins -done
-* 4.
-*/
-//
-//class range
-//{
-//	int min_range;
-//	int max_range;
-//	
-//	int min_range()
-//	{
-//		
-//		return min_range;		
-//	}
-//	int max_range() 
-//	{
-//		Scanner sc = new Scanner(System.in);
-//		
-//		return max_range;
-//	}
-//
-//}
+* */
 
-class GuesserManOrg//done
+class GuesserManOrg
 {
 	int guessNum;
 		
@@ -85,8 +64,6 @@ class EmpireManOrg
 {
 	int numFromGuesser;
 	int[] numFromPlayer;
-	//int[] numFromPlayer;
-	//int numFromPlayer2;
 	
 	void collectNumFromGuesser(int a,int b)
 	{
@@ -117,47 +94,10 @@ class EmpireManOrg
 			System.out.println("\tGame Lost Try Again!");
 		}
 		
-		
-//		for(int elem:numFromPlayer)
-//			System.out.print("nfp"+elem+" ");
-//		if(numFromGuesser == numFromPlayer[0])
-//			System.out.println("player 1 won");
-//		else if(numFromGuesser == numFromPlayer[1])
-//			System.out.println("player 2 won");
-//		else
-//			System.out.println("Game Lost Try Again!");
-//	//	return numFromPlayer[];
-//		PlayerManOrg p1 = new PlayerManOrg();
-//		numFromPlayer1 = p1.guessNum(a,b);
-//		
-//		PlayerManOrg p2 = new PlayerManOrg();
-//		numFromPlayer2 = p2.guessNum(a,b);
+
 	}
 	
-	
-//	void compare(int numFromPlayer[])
-//	{
-////		if
-////		else if
-////		else
-////		
-////		
-//		for(int elem:numFromPlayer)
-//			System.out.println(elem);
-//	}
-//	
-//	void compare()
-//	{
-//		System.out.println("compare method");
-//		for(int elem:numFromPlayer)
-//			System.out.println("cpr"+elem+" ");
-//		if(numFromGuesser == numFromPlayer[0])
-//			System.out.println("player 1 won");
-//		else if(numFromGuesser == numFromPlayer[1])
-//			System.out.println("player 2 won");
-//		else
-//			System.out.println("Game Lost Try Again!");
-//	}
+
 }
 
 
@@ -174,18 +114,11 @@ public class OriginalGuesserGame {
 		int max_range = sc.nextInt();
 		System.out.print("Number of Players: ");
 		int nfp = sc.nextInt();
-//		
-//		GuesserManOrg go = new GuesserManOrg();
-//		go.guessNum(min_range,max_range);
-//		
-//		PlayerManOrg p = new PlayerManOrg();
-//		p.guessNum(min_range,max_range);
-//		
+
 		EmpireManOrg e = new EmpireManOrg();
 		e.collectNumFromGuesser(min_range,max_range);
 		e.collectNumFromPlayers_and_compare(min_range,max_range,nfp);
-		//int[] numFromPlayer = null;
-		//e.compare();
+		
 	}
 
 }
